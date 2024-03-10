@@ -16,11 +16,10 @@ import java.util.List;
 @AllArgsConstructor
 @RestController
 @Tag(name = "user")
-@RequestMapping("/api/user")
+@RequestMapping("/api/users")
 public class UserController {
 
     private final UserService userService;
-    private final UserRepository userRepository;
 
     @GetMapping
     public List<User> findAll(){
